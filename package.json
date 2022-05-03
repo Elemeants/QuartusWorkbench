@@ -10,6 +10,10 @@
 	"categories": [
 		"Other"
 	],
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/Elemeants/QuartusWorkbench.git"
+	},
 	"activationEvents": [
 		"onStartupFinished",
 		"onView:quartusprime",
@@ -19,17 +23,13 @@
 	],
 	"main": "./out/extension.js",
 	"contributes": {
-		"taskDefinitions": [
-			{
-				"type": "quartus"
-			}
-		],
-		"snippets": [
-			{
-				"language": "vhdl",
-				"path": "snippets.json"
-			}
-		],
+		"taskDefinitions": [{
+			"type": "quartus"
+		}],
+		"snippets": [{
+			"language": "vhdl",
+			"path": "snippets.json"
+		}],
 		"viewsContainers": {
 			"activitybar": [{
 				"id": "quartusPanel",
