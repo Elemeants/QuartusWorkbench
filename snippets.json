@@ -1,0 +1,41 @@
+{
+	"Template libraries": {
+		"prefix": "ieee",
+		"body": [
+			"library IEEE;",
+			"use IEEE.NUMERIC_STD.ALL;",
+			"use IEEE.STD_LOGIC_1164.ALL;",
+			"use IEEE.STD_LOGIC_UNSIGNED.ALL;"
+		],
+		"description": "Standar library templates IEEE"
+	},
+	"Module": {
+		"prefix": "module",
+		"body": [
+			"",
+			"--",
+			"-- Entity $1",
+			"--",
+			"ENTITY $1 IS",
+			"   GENERIC();",
+			"   PORT();",
+			"END $1; -- $1",
+			"",
+			"--",
+			"-- Architecture for $1",
+			"--",
+			"ARCHITECTURE arch$1 OF $1 IS",
+			"-- Signals space",
+			"",
+			"-- Architecture definition",
+			"BEGIN",
+			"",
+			"-- Process definition",
+			"PROCESS () BEGIN",
+			"END PROCESS;",
+			"",
+			"END arch$1; -- arch$1"
+		],
+		"description": "Create new module entity/arch VHDL"
+	}
+}
